@@ -73,7 +73,7 @@ sudo apt install obs-studio
 echo -e ${g}${b}CLOCK APP*${n}
 sleep 10s
 sudo apt install gnome-clocks
-echo -e ${g}${b}WINE${n} - A compability layer that can run windows only files in linux
+echo -e ${g}${b}WINE${n} - A compability layer that can run windows only files in GNU+Linux
 echo -e ${r}WARNING${n} careless use of this may introduce virus in system, however it is very less likely  
 echo do you need this?[y/n]
 read response
@@ -98,7 +98,7 @@ echo do you need this?[y/n]
 read response
 if [ $response == 'y' ]
 then  
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
+wget https://dl.google.com/GNU+Linux/direct/google-chrome-stable_current_amd64.deb 
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 elif [ $response == 'n' ]
 echo ABORTED
@@ -106,6 +106,9 @@ else
 echo Sorry cannot recognise command , copy the package name if you need it and install it later
 sleep 1m 
 fi
-echo -e ${g}${b}STEAM client${n} for linux 
+echo -e ${g}${b}STEAM client${n} for GNU+Linux 
 sleep 10s
 sudo apt install steam
+echo -e ${g}${b}Spotify${n} for GNU+Linux
+echo -e ${r}${b}Using flatpak please make sure you have enough disk space. This is not an error :)${n}
+flatpak install spotify
