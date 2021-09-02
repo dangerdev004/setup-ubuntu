@@ -110,7 +110,8 @@ echo -e ${g}${b}STEAM client${n} for GNU+Linux
 sleep 10s
 sudo apt install steam
 echo -e ${g}${b}Spotify${n} for GNU+Linux
-echo -e ${r}${b}Using flatpak please make sure you have enough disk space. This is not an error :)${n}
+echo -e ${r}${b}WARNING:Using flatpak please make sure you have enough disk space.${n}
+sleep 3s
 flatpak install spotify
 echo -e ${g}${b}Kdenlive${n} - Video Editor for GNU+Linux
 sleep 10s
